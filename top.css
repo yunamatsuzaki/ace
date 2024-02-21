@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+/* メインビジュアル ---------------------------------------------*/
+.visual{
+    margin-top: 96px;
+    background: url(../images/mv_pic.jpg) center center no-repeat;
+    min-height: 720px;
+}
+
+.to-news{
+    text-align: right;
+    padding-top: 30px;
+}
+
+.to-news a{
+    transition: opacity .2s;
+}
+
+.to-news a:hover{
+    opacity: 0.9;
+}
+
+.mv-catch{
+    text-align: right;
+    padding-top: 60px;
+}
+
+/* ここからmain内 ---------------------------------------------*/
+h2{
+    text-align: center;
+}
+
+/* ABOUT USエリア------------------------------------------*/
+.m-about{
+    padding: 50px 0 70px;
+    border-bottom:3px solid #fff100;
+}
+
+.m-about h2{
+    font-family: Arial,sans-serif;
+    font-size: 32px;
+    text-shadow:2px 2px #fff100;
+    margin-bottom: 30px;
+}
+
+.m-about h2 span{
+    display: inline-block;
+}
+
+.m-about h2 span:nth-child(1){
+    font-size: 36px;
+    color:#ff783c;
+    transform: rotate(-10deg);
+    margin-right: 5px;
+}
+
+.m-about h2 span:nth-child(2){
+    color:#ff3b78;
+    transform: rotate(10deg);
+}
+
+.m-about h2 span:nth-child(3){
+    color:#04a5e9;
+    transform: rotate(-10deg);
+}
+
+.m-about h2 span:nth-child(4){
+    color:#aad127;
+    transform: rotate(8deg);
+    margin-right: 5px;
+}
+
+.m-about h2 span:nth-child(5){
+    color:#00aa64;
+    transform: rotate(-8deg);
+    margin-right: 15px;
+}
+
+.m-about h2 span:nth-child(6){
+    font-size: 36px;
+    color:#0082ff;
+    transform: rotate(10deg);
+}
+
+.m-about h2 span:nth-child(7){
+    color:#8c48ba;
+    transform: rotate(-10deg);
+    margin-right: 5px;
+}
+
+.m-about p{
+    line-height: 2;
+}
+
+
+/* ３つのポイントエリア -------------------------------------*/
+.m-points{
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.m-points .inner{
+    padding-top: 50px;
+    border-top:4px dotted #fff;
+}
+
+.m-points h2{
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+}
+
+.pop-line{
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    width: max-content;
+    margin: 0 auto 30px;
+    line-height: 50px;
+    position: relative;
+    color: #fff;
+}
+
+.pop-line::before{
+    content:"";
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    background: url(../images/pop_left_y.png) no-repeat;
+    position:absolute;
+    top:0;
+    left:-50px;
+}
+
+.pop-line::after{
+    content:"";
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    background: url(../images/pop_right_y.png) no-repeat;
+    position:absolute;
+}
+
+.m-points .point{
+    width: 300px;
+    text-align: center;
+}
+
+.point h3{
+    font-size: 24px;
+    padding-bottom:16px;
+    position: relative;
+
+}
+
+.point h3::before{
+    content:"1";
+    font-size: 56px;
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+    color: transparent;
+    margin-right: 20px;
+    position: absolute;
+    left: 0;
+    top:-12px;
+}
+
+.course h3::before{
+    content:"1";
+    text-shadow: 2px 2px 0 #ff3b78;
+}
+
+.teacher h3::before{
+    content:"2";
+    text-shadow: 2px 2px 0 #ff783c;
+}
+.school h3::before{
+    content:"3";
+    text-shadow: 2px 2px 0 #00aa64;
+}
+
+.point h3::after{
+    content:"";
+    display: block;
+    width: 300px;
+    height: 20px;
+    background: url(../images/line_yellow.png);
+}
+
+.point .text{
+    text-align:justify;
+    padding: 16px 0;
+    line-height: 1.8;
+}
+
+/* ボタンの色をカスタム */
+.course .btn a{
+    color:#ff3b78;
+    border: 2px solid #ff3b78;
+}
+
+.teacher .btn a{
+    color:#ff783c;
+    border: 2px solid #ff783c;
+}
+
+.school .btn a{
+    color:#00aa64;
+    border: 2px solid #00aa64;
+}
+
+
+/* よくあるご質問エリア -------------------------------------------*/
+
+.m-faq{
+    margin:50px auto 70px;
+    background-color: #96c828;
+    transition: all .3s;
+    box-shadow: 0 3px 0 0 #00aa64;
+}
+
+.m-faq a{
+    padding: 14px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+
+.m-faq:hover{
+    background-color: #84b125;
+}
+
+.m-faq div{
+    border: 2px solid #fff;
+    padding: 14px 14px 14px 0;
+    align-items: center;
+}
+
+.m-faq div::before{
+    padding: 0 24px;
+    content: "?";
+    font-size: 88px;
+    text-shadow: 2px 2px 0 #00aa64;
+    display: block;
+}
+
+.m-faq dl{
+    border-left: 2px solid #fff;
+    padding-left: 24px;
+}
+
+.m-faq dt{
+    font-size: 32px;
+    text-shadow: 2px 2px 0 #00aa64;
+    margin-bottom: 14px;
+}
+
+.m-faq dd{
+    line-height: 1.8;
+}
+
+.m-faq::after{
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 4px dotted #ccc;
+    position: relative;
+    top:70px;
+}
+
+/* 最新情報エリア --------------------------------------------------*/
+
+.m-news{
+    padding-top: 70px;
+}
+
+.m-news .pop-line{
+    color:#3f89c3;
+}
+
+.m-news .pop-line::before{
+    background: url(../images/pop_left_b.png) no-repeat;
+}
+
+.m-news .pop-line::after{
+    background: url(../images/pop_right_b.png) no-repeat;
+}
+
+.m-news dl{
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.m-news dl dt{
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    line-height: 32px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.m-news dl .type-1{
+    background: #ff3b78;
+}
+
+.m-news dl .type-2{
+    background: #04a5e9;
+}
+
+.m-news dl .type-3{
+    background: #00aa64;
+}
+
+.m-news dl dd{
+    margin-left: 1em;
+}
+
+.m-news .btn{
+    text-align: right;
+    margin:50px 0 70px;
+}
